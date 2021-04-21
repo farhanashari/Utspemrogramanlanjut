@@ -1,0 +1,27 @@
+private void kelvin(){
+        input = Double.parseDouble(txtAwal.getText());
+        
+        kelvin     = input;
+        celcius    = kelvin-273.15;
+        fahrenheit = kelvin*1.8-459.67;
+        reamur     =(kelvin-273.15) * 0.8;
+ hasilreamur     = Double.toString(reamur);
+                                   txtReamur.setText(hasilreamur);
+        
+        hasilkelvin     = Double.toString(kelvin);
+        txtKelvin.setText(hasilkelvin);
+ private void btnKonversiActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        
+        if(rbCelcius.isSelected()){
+            celcius();
+        }
+        else if(rbFahrenheit.isSelected()){
+            fahrenheit();
+        }
+                                    else if(rbReamur.isSelected()){
+                                    reamur();
+        }
+        else if(rbKelvin.isSelected()){
+            kelvin();
+        }    
+    }
